@@ -14,8 +14,10 @@
         "title":"You're Doing It Wrong! Studying Unexpected Behaviors in Child-Robot Interaction",
         "venue":"ICSR",
         "year":2015,
+        "doi":"10.1007/978-3-319-25554-5_39",
+        "isbn":"978-3-319-25553-8",
         "authors":"Lemaignan, S. and Fink, J. and Mondada, F. and Dillenbourg, P.",
-        "bibtex":"@inproceedings{lemaignan2015youre,\\nauthor = {S\\'everin Lemaignan and Julia Fink and Francesco Mondada and Pierre Dillenbourg},\\ntitle = {You're Doing It Wrong! Studying Unexpected Behaviors in Child-Robot Interaction},\\nbooktitle = {Proceedings of the 2015 International Conference on Social Robotics},\\nyear = {2015}}"
+        "bibtex":"@inproceedings{lemaignan2015youre,\\nauthor = {S\\'everin Lemaignan and Julia Fink and Francesco Mondada and Pierre Dillenbourg},\\ntitle = {You're Doing It Wrong! Studying Unexpected Behaviors in Child-Robot Interaction},\\nbooktitle = {Social Robotics},\\nseries = {Lecture Notes in Computer Science},\\nvolume = {9388},\\npages = {390-400},\\npublisher = {Springer International Publishing},\\nyear = {2015}}"
     },
     {
         "id":"lemaignan2015pyrobots",
