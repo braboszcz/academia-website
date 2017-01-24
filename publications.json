@@ -1,6 +1,17 @@
 [
 
-   
+      {
+        "id":"Braboszcz2017",
+        "pdf":"publis/Braboszcz2017.pdf",
+        "type":"journal",
+        "title":"Increased Gamma Brainwave Amplitude Compared to Control in Three Different Meditation Traditions",
+        "keywords":["Meditation, EEG, Comparative study"],
+        "venue": "PLOS One", 
+        "year":2017,
+        "authors":["Braboszcz, C.", "Cahn, B.R.", "Levy, J.", "Fernandez, M.", " Delorme, A."]
+               
+        
+       },
    
    {
         "id":"Grandchamp2014",
@@ -10,7 +21,7 @@
         "keywords":["Mind Wandering"],
         "venue": "Frontiers in Psychology", 
         "year":2014,
-        "authors":["Grandchamp, R", "Braboszcz, C." , "Delorme, A."]
+        "authors":["Grandchamp, R.", "Braboszcz, C." , "Delorme, A."]
                
         
        },
@@ -23,7 +34,7 @@
         "keywords":["ICA", "EEG"],
         "venue":"IEEE EMBS ", 
         "year":2012,
-        "authors":["Grandchamp, R", "Braboszcz, C.", "Makeig, S.", "Delorme, A."]
+        "authors":["Grandchamp, R.", "Braboszcz, C.", "Makeig, S.", "Delorme, A."]
                
         
        },
