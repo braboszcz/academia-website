@@ -1,8 +1,38 @@
 [
 
+      
+       {
+        "id":"Braboszcz2017c",
+        "pdf":"publis/Braboszcz2017c.pdf",
+        "type":"journal",
+        "title":"Hypnotic analgesia reduces brain responses to pain seen in others.",
+        "keywords":["Hypnosis", "fMRI", "Pain", "Empathy"],
+        "venue": "Scientific Report", 
+        "year":2017,
+        "authors":["Braboszcz, C.", "Brandao-Farinelli, E.", "Vuilleumier, P."]
+               
+        
+       },
+      
+      
+       {
+        "id":"Braboszcz2017b",
+        "pdf":"publis/Braboszcz2017b.pdf",
+        "type":"journal",
+        "title":"Pratiques mentales: vers une convergence épistémique de la méditation, de l'hypnose et de l'imagerie mentale.",
+        "keywords":["Hypnosis", "Meditation", "Mental Imagery"],
+        "venue": "Intellectica", 
+        "year":2017,
+        "authors":["Braboszcz, C."]
+               
+        
+       },
+      
+      
+      
       {
-        "id":"Braboszcz2017",
-        "pdf":"publis/Braboszcz2017.pdf",
+        "id":"Braboszcz2017a",
+        "pdf":"publis/Braboszcz2017a.pdf",
         "type":"journal",
         "title":"Increased Gamma Brainwave Amplitude Compared to Control in Three Different Meditation Traditions",
         "keywords":["Meditation", "EEG", "Comparative study"],
