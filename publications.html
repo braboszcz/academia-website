@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<!--
+    Retrospect by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+    <head>
+        <title>Claire Braboszcz - Publications</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <script src="assets/js/webcomponents-lite.min.js"></script>
+        <link rel="import" href="elements/nav.html">
+        <link rel="import" href="elements/footer.html">
+        <link rel="import" href="elements/pub-record.html">
+        <style id="abstracts-style" type="text/css">
+        .abstract {display:none;} /*initially, abstracts are hidden */
+        </style>
+
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">HOME</a></h1>
+            <a href="#nav">Menu</a>
+        </header>
+
+        <!-- Nav -->
+        <my-menu id="nav"></my-menu>
+
+        <!-- Main -->
+        <section id="main" class="wrapper style3 publication-header">
+            <div class="container">
+
+                <header class="major special">
+                    <h2 style="color:black;background-color:rgba(255,255,255,0.7);">Publications</h2>
+                </header>
+
+            </div>
+        </section>
+        <section id="main" class="wrapper">
+            <div class="container">
+                <span id="keywordsfiltering"></span>
+
+                <hr/>
+                    <input id="only-full-papers" type="checkbox" checked="true" name="only-full-papers" onclick="this.checked ? $('#abstracts-style').html('.abstract {display:none;}'):$('#abstracts-style').html('');$('#nb-publis').html($('#publis li:visible').size());display_years()"></input>
+                <label for="only-full-papers">
+                    <strong><em> Only full papers</em></strong>
+                </label>
+
+                <em>(<span id="nb-publis"></span> publications displayed in total)</em>
+                <div id="publis"></div>
+                <div id="nothing-to-display"></div>
+
+
+            <hr/>
+            <p>
+
+            <strong><i class="fa fa-newspaper-o"></i></strong>
+            denotes a <strong>journal</strong> article, <strong><i
+            class="fa fa-book"></i></strong> denotes a <strong>book
+            chapter</strong>, and <strong><i class="fa
+            fa-users"></i></strong> denotes a <strong>conference</strong>
+            article.
+            When available, click on the <strong><a><i class="fa
+            fa-file-pdf-o"></i></a> PDF icon</strong> to
+            download the paper. 
+
+            </p>
+
+            <p>
+            For what it is worth, <a
+            href="https://scholar.google.co.uk/citations?user=L6vqwMQAAAAJ"
+            alt="My Google Scholar profile">Google Scholar</a>
+            has kindly collected a few statistics, including
+            citations per article and overall h-index. Please note
+            that these values, being automatically computed, are
+            prone to errors!
+            </p>
+
+            </div>
+
+
+        </section>
+
+
+        <my-footer></my-footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+        <script>
+
+        var publication_list;
+        var keywords = {};
+
+        function by_year(data) {
+            var publications_by_year = new Array();
+
+            for (var idx in data) {
+                var pub = data[idx];
+                if (publications_by_year[pub['year']] == null) {
+                    publications_by_year[pub['year']] = [];
+                }
+                publications_by_year[pub['year']].push(pub);
+            }
+            return publications_by_year;
+        }
+
+        function biblio() {
+
+
+            data = by_year(publication_list);
+
+            for (var year = 2100; year > 2000; year--) {
+                if (year in data) {
+
+                    $('#publis').append($("<h3 class='year'>").text(year));
+
+                    var publications = data[year];
+                    var ul = $('<ul class="alt fa-ul">');
+
+                    for (var idx in publications) {
+                        var pub = publications[idx];
+
+                        var is_abstract = (pub['type'].indexOf("abstract") > -1 
+                                        || pub['type'] == "video" 
+                                        || pub['type'] == "poster") 
+
+                        var authors = pub['authors'].map(
+                                function (el) 
+                                {
+                                    return el.split(', ').reverse().join(" ");
+                                }).join("; ");
+
+                        var keywordsclasses = "no-keyword";
+                        if (pub['keywords']) {
+                            keywordsclasses = pub['keywords'].map(
+                                function (el) 
+                                {
+                                    var kwclass = el.split(' ').join("-").toLowerCase();
+                                    keywords[el] = kwclass;
+                                    return kwclass;
+                                }).join(" ");
+                        }
+
+
+                        ul.append($('<li id="' + pub['id'] + '" class="' +
+                                    (is_abstract ? 'abstract ': '') + keywordsclasses + '" ' +
+                                    'is="publication-record" ' + 
+                                    'articletitle="' + pub['title'] + '" ' +
+                                    'bibkey="' + pub['id'] + '" ' +
+                                    'type="' + pub['type'] + '" ' +
+                                    'authors="' + authors + '" ' +
+                                    'pdf="' + pub['pdf'] + '" ' +
+                                    'videosrc="' + pub['media'] + '" ' +
+                                    'doi="' + pub['doi'] + '" ' +
+                                    'note="' + pub['note'] + '" ' +
+                                    'venue="' + pub['venue'] + '" ' +
+                                    'year="' + pub['year'] + '" ' +
+                                    'bibtex="' + pub['bibtex'] + '" ' +
+                                    'award="' + pub['award'] + '" ' +
+                                    '>'));
+                    }
+                    $('#publis').append(ul);
+                }
+            }
+        }
+
+        function filter_restore_all() {
+
+            $('.keywords-style').html('');
+            $('.keyword-filter').addClass('alt');
+            $('#nb-publis').html($('#publis li:visible').size());
+            display_years();
+        }
+
+        function filter(button, keyword) {
+
+            if ($(button).hasClass('alt')) {
+
+
+                $('#keyword-' + keyword + '-style').html('#publis li:not(.' + keyword + '){display:none;}');
+                $(button).removeClass('alt');
+            }
+            else {
+                $('#keyword-' + keyword + '-style').html('');
+                $(button).addClass('alt');
+            }
+
+            $('#nb-publis').html($('#publis li:visible').size());
+            display_years();
+        }
+        
+        function display_years() {
+
+            $('.year').each(function() {
+                if ($(this).next().children(':visible').size() === 0) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            });
+
+            if ($('.year:visible').size() === 0) {
+                if ($('#only-full-papers').prop('checked')) {
+                    $('#nothing-to-display').html('No publications with these criteria! Maybe you want to uncheck <em>Only full paper</em>?');
+                }
+                else if ($('#keywordsfiltering > a:not(.alt)').size() > 2){ // two keywords (+ 'All') selected
+                    $('#nothing-to-display').html('No publications with these criteria! Maybe you want to select less keywords?');
+                }
+            }
+            else {
+                $('#nothing-to-display').html('');
+            }
+        }
+
+        function keyword_filters() {
+
+            var buttons = '<a class="button special tiny" onclick="filter_restore_all()">All</a> ';
+
+            // list keywords by alphabetical order
+            var arr = [];
+            for (var key in keywords) {
+                if (keywords.hasOwnProperty(key)) {
+                    arr.push(key);
+                }
+            }
+            arr.sort();
+
+            for (var i = 0; i < arr.length; i++) {
+                var kw = arr[i];
+
+                $("<style type='text/css' class='keywords-style'>").prop("id", "keyword-" + keywords[kw] + "-style").html('').appendTo("head");
+                buttons += '<a class="button alt tiny keyword-filter" onclick="filter($(this), \'' + keywords[kw] + '\')">' + kw + '</a> ';
+            }
+            return buttons;
+        }
+
+        $.getJSON("publications.json", function(json) {
+            publication_list = json;
+            biblio();
+
+            $('#nb-publis').html($('#publis li:visible').size());
+
+            $('#keywordsfiltering').html(keyword_filters());
+        });
+
+        </script>
+
+    </body>
+</html>

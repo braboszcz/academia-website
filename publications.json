@@ -1,0 +1,127 @@
+[
+
+      
+       {
+        "id":"Braboszcz2017c",
+        "pdf":"publis/Braboszcz2017c.pdf",
+        "type":"journal",
+        "title":"Hypnotic analgesia reduces brain responses to pain seen in others.",
+        "keywords":["Hypnosis", "fMRI", "Pain", "Empathy"],
+        "venue": "Scientific Report", 
+        "year":2017,
+        "authors":["Braboszcz, C.", "Brandao-Farinelli, E.", "Vuilleumier, P."]
+               
+        
+       },
+      
+      
+       {
+        "id":"Braboszcz2017b",
+        "pdf":"publis/Braboszcz2017b.pdf",
+        "type":"journal",
+        "title":"Pratiques mentales: vers une convergence épistémique de la méditation, de l'hypnose et de l'imagerie mentale.",
+        "keywords":["Hypnosis", "Meditation", "Mental Imagery"],
+        "venue": "Intellectica", 
+        "year":2017,
+        "authors":["Braboszcz, C."]
+               
+        
+       },
+      
+      
+      
+      {
+        "id":"Braboszcz2017a",
+        "pdf":"publis/Braboszcz2017a.pdf",
+        "type":"journal",
+        "title":"Increased Gamma Brainwave Amplitude Compared to Control in Three Different Meditation Traditions",
+        "keywords":["Meditation", "EEG", "Comparative study"],
+        "venue": "PLOS One", 
+        "year":2017,
+        "authors":["Braboszcz, C.", "Cahn, B.R.", "Levy, J.", "Fernandez, M.", " Delorme, A."]
+               
+        
+       },
+   
+   {
+        "id":"Grandchamp2014",
+        "pdf":"publis/Grandchamp2014.pdf",
+        "type":"journal",
+        "title":"Oculometric variations during mind wandering",
+        "keywords":["Mind Wandering"],
+        "venue": "Frontiers in Psychology", 
+        "year":2014,
+        "authors":["Grandchamp, R.", "Braboszcz, C." , "Delorme, A."]
+               
+        
+       },
+   
+   {
+        "id":"Grandchamp2012",
+        "pdf":"publis/Grandchamp2012.pdf",
+        "type":"journal",
+        "title":"Stability of ICA decomposition across within-subject EEG datasets",
+        "keywords":["ICA", "EEG"],
+        "venue":"IEEE EMBS ", 
+        "year":2012,
+        "authors":["Grandchamp, R.", "Braboszcz, C.", "Makeig, S.", "Delorme, A."]
+               
+        
+       },
+   
+   {
+        "id":"Braboszcz2013",
+        "pdf":"publis/Braboszcz2013.pdf",
+        "type":"journal",
+        "title":"Plasticity of visual attention in Isha yoga meditation practitioners before and after a 3-month retreat",
+        "keywords":["Meditation", "Psychophysic"],
+        "venue":"Frontiers in Psychology ", 
+        "year":2013,
+        "authors":["Braboszcz, C.",  "Cahn, B. R.", "Balakrishnan, B.", "Maturi, R. K.",  "Grandchamp, R." , "Delorme, A."]
+               
+        
+       },
+   
+   {
+        "id":"Braboszcz2011",
+        "pdf":"publis/Braboszcz2011.pdf",
+        "type":"journal",
+        "title":"Lost in thoughts: neural markers of low alertness during mind wandering",
+        "keywords":["Mind Wandering", "Time Frequency Analysis", "EEG", "Meditation"],
+        "venue":"Neuroimage",
+        "year":2011,
+        "authors":["Braboszcz, C.", "Delorme, A."]
+               
+        
+       },
+    
+    
+     {
+        "id":"Braboszcz2010",
+        "pdf":"publis/Braboszcz2010.pdf",
+        "type":"chapter",
+        "title":"Meditation and Neuroscience: from basic research to clinical practice",
+        "keywords":["Meditation"],
+        "venue":"Handbook of Integrative Clinical Psychology, Psychiatry, and Behavioral Medicine: Perspectives, Practices, and Research, Springer Publishing ",
+        "year":2010,
+        "authors":["Braboszcz, C.",  "Hahusseau, S.", "Delorme, A."]
+               
+        
+       },
+   
+   
+    {
+        "id":"lemaignan2014cognitive",
+        "pdf":"publis/lemaignan2014cognitive.pdf",
+        "type":"conference",
+        "title":"The Cognitive Correlates of Anthropomorphism",
+        "keywords":["Anthropomorphism"],
+        "venue":"Workshop A bridge between Robotics and Neuroscience - HRI",
+        "year":2014,
+        "authors":["Lemaignan, S.", "Fink, J.", "Dillenbourg, P.", "Braboszcz, C."],
+        "bibtex":"@inproceedings{lemaignan2014cognitive,\\nauthor = {Lemaignan, S. and Fink, J. and Dillenbourg, P. and Braboszcz, C.},\\ntitle = {The Cognitive Correlates of Anthropomorphism},\\nbooktitle = {Proceedings of the Workshop: A bridge between Robotics and Neuroscience at the 2014 ACM/IEEE Human-Robot Interaction Conference},\\nyear = {2014}}"
+    }
+    
+ 
+   
+]

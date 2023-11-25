@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+    Retrospect by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+    <head>
+        <title>Claire Braboszcz - Useful links and lines of code </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <script src="assets/js/webcomponents-lite.min.js"></script>
+        <link rel="import" href="elements/nav.html">
+        <link rel="import" href="elements/footer.html">
+        <link rel="import" href="elements/pub-record.html">
+
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">HOME</a></h1>
+            <a href="#nav">Menu</a>
+        </header>
+
+        <!-- Nav -->
+        <my-menu id="nav"></my-menu>
+
+        <!-- Main -->
+        <section id="main" class="wrapper style3 links-header">
+            <div class="container">
+
+                <header class="major special">
+                    <h2>A few useful links and lines of code </h2>
+                </header>
+
+            </div>
+        </section>
+        
+         <section id="main" class="wrapper">
+            <div class="inner">
+                <article >
+                    <div class="container 75%">
+                        <p>
+                        I am putting here diverse links towards open-source toolboxes and resources as well as some commands in Latex/Python/R I find useful.
+                        </p>
+
+                      
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        
+        
+
+        <section id="research" class="wrapper style1">
+            <div class="inner">
+
+
+
+
+
+                    
+                    <div class="content">
+                        <h2>Useful commands in LateX</h2>
+
+                        <p> The<a href="https://www.ctan.org/pkg/latexdiff?lang=en"" alt=" latexdiff"> <strong>latexdiff</strong></a>  package allows to compare 2 documents and mark up changes:
+                        <pre> latexdiff draft.tex revision.tex > diff.tex</pre> 
+
+                        </p>
+                        
+                        <p> Using <a href="http://pandoc.org/demos.html "" alt=" Pandoc"> <strong>Pandoc</strong></a> to easily convert a .tex file in .doc, including the bibiliography
+                        <pre> pandoc -s foo.tex --bibliography=foo.bib -o foo.docx </pre> 
+
+                        </p>
+
+                        <p> Generate LateX tables from CSV files painlessly with  <a href="http://www.tablesgenerator.com/latex_tables#
+ "" alt=" Tables"> <strong>Table Generator</strong> </a> 
+
+                        </p>
+
+                        
+                    </div>
+
+
+                    
+                    <div class="content">
+                        <h2>EEG processing and analysis</h2>
+
+                        <p> I am mostly working with the  
+                       <a href="http://sccn.ucsd.edu/eeglab/"" alt=" EEGlab"> <strong>EEGlab</strong> </a> toolbox (in Matlab) but also trying out the python package   <a href="http://martinos.org/mne/stable/index.html"" alt=" MNE"> <strong>MNE</strong> </a> 
+
+                        </p>
+                    </div>
+
+
+        
+
+                
+
+                   
+
+      
+
+        <my-footer></my-footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
