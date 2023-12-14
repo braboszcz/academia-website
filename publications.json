@@ -1,16 +1,14 @@
 [
 
-
-	
-
 	{
         "id":"Braboszcz2023",
         "type":"conference",
         "title":"Cognitive screening based on EEG markers for clinical trial stratification",
-        "keywords":["patient startification", "cognitive decline", "EEG"],
+        "keywords":["patient stratification", "cognitive decline", "EEG"],
         "venue": "Alzheimer's Association International Conference", 
         "year":2023,
         "authors":["Braboszcz, C.", "Chugani, K.", "Dagnino, P.C.", "Soria-Frisch, A."]
+        
         }, 
 	
 	
@@ -19,7 +17,7 @@
         "id":"Dagnino2023",
         "type":"journal",
         "title":"Stratification of response to tDCS intervention in a healthy pediatric population based on resting state EEG profile",
-        "keywords":["patient startification", "tDCS", "EEG profile"],
+        "keywords":["patient stratification", "tDCS", "EEG profile"],
         "venue": "Scientific Reports", 
         "year":2023,
         "authors":["Dagnino, P.C.","Braboszcz, C.", "Kroupi, E.", "Splittgerber, M.",  "Prehn-Kristensen, A.", "Krauel. K.", "Siniatchkin, M.", 
@@ -33,7 +31,7 @@
         "id":"Dagnino2023",
         "type":"conference",
         "title":"Machine learning stratification for tDCS response analysis",
-        "keywords":["patient startification", "tDCS"],
+        "keywords":["patient stratification", "tDCS"],
         "venue": "Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation", 
         "year":2023,
         "authors":["Dagnino, P.C.","Braboszcz, C.", "Kroupi, E.", "Splittgerber, M.",  "Prehn-Kristensen, A.", "Krauel. K.", "Siniatchkin, M.", 
