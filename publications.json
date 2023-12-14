@@ -1,5 +1,75 @@
 [
 
+
+
+	
+	{
+        "id":"Braboszcz2023",
+        "type":"conference",
+        "title":"Cognitive screening based on EEG markers for clinical trial stratification",
+        "keywords":["patient startification", "cognitive decline", "EEG"],
+        "venue": "Alzheimer's Association International Conference", 
+        "year":2023,
+        "authors":["Dagnino, P.C.","Braboszcz, C.", "Kroupi, E.", "Splittgerber, M.",  "Prehn-Kristensen, A.", "Krauel. K.", "Siniatchkin, M.", 
+        "Moliadze, V.", "Soria-Frisch, A."]
+	
+	
+	
+	{
+        "id":"Dagnino2023",
+        "type":"journal",
+        "title":"Stratification of response to tDCS intervention in a healthy pediatric population based on resting state EEG profile",
+        "keywords":["patient startification", "tDCS", "EEG profile"],
+        "venue": "Scientific Reports", 
+        "year":2023,
+        "authors":["Dagnino, P.C.","Braboszcz, C.", "Kroupi, E.", "Splittgerber, M.",  "Prehn-Kristensen, A.", "Krauel. K.", "Siniatchkin, M.", 
+        "Moliadze, V.", "Soria-Frisch, A."]
+               
+        
+       },
+
+
+	{
+        "id":"Dagnino2023",
+        "type":"conference",
+        "title":"Machine learning stratification for tDCS response analysis",
+        "keywords":["patient startification", "tDCS"],
+        "venue": "Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation", 
+        "year":2023,
+        "authors":["Dagnino, P.C.","Braboszcz, C.", "Kroupi, E.", "Splittgerber, M.",  "Prehn-Kristensen, A.", "Krauel. K.", "Siniatchkin, M.", 
+        "Moliadze, V.", "Soria-Frisch, A."]
+               
+        
+       },
+	
+
+
+	{
+        "id":"Putois2020",
+        "type":"journal",
+        "title":"Thérapie par rescénarisation d'images mentales par télépsychologie contre les cauchemars chronique",
+        "keywords":["Imagery rehearsal therapy", "Mental imagery", "posttraumatic stress", "nightmares"],
+        "venue": "Médecine du sommeil", 
+        "year":2020,
+        "authors":["Putois, B.", "Peter-Derex, L.", "Leslie, W.", "Braboszcz, C.", "El-Hage, W.", "Bastuji, H."]
+               
+        
+       },
+	
+
+
+	{
+        "id":"Putois2019",
+        "type":"journal",
+        "title":"Internet-based intervention for posttraumatic stress disorder: using remote imagery rehearsal therapy to treat nightmares",
+        "keywords":["Imagery rehearsal therapy", "Mental imagery", "posttraumatic stress", "nightmares"],
+        "venue": "Psychotherapy and Psychosomatics", 
+        "year":2019,
+        "authors":["Putois, B.", "Peter-Derex, L.", "Leslie, W.", "Braboszcz, C.", "El-Hage, W.", "Bastuji, H."]
+               
+        
+       },
+
       
        {
         "id":"Braboszcz2017c",
